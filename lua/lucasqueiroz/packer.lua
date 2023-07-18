@@ -16,10 +16,10 @@ return require('packer').startup(function(use)
 
   -- colorscheme
   use ({ 
-	  "ellisonleao/gruvbox.nvim",
-	  as = 'gruvbox',
+	  "navarasu/onedark.nvim",
+	  as = 'onedark',
 	  config = function()
-		  vim.cmd('colorscheme gruvbox')
+		  vim.cmd('colorscheme onedark')
 	  end
   })
 
