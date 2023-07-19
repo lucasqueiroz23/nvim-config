@@ -1,7 +1,3 @@
--- leader + dir will trigger the :Ex command, that
--- opens the file explorer
-vim.keymap.set("n", "<leader>dir", vim.cmd.Ex)
-
 -- move stuff up and down when in visual mode
 -- with capital K and J
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
