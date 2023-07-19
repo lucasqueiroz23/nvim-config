@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
 
   -- undo tree
   use 'mbbill/undotree'
-  
+
   -- vim fugitive(manipulate git stuff)
   use 'tpope/vim-fugitive'
 
@@ -59,5 +59,6 @@ return require('packer').startup(function(use)
 		{'L3MON4D3/LuaSnip'},     -- Required
 	  }
 }
+  use 'jiangmiao/auto-pairs'
 
 end)
