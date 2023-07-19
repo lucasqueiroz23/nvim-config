@@ -30,7 +30,13 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use 'nvim-treesitter/playground'
 
-  -- harpoon -> change files quickly
+  -- harpoon -> change between files quickly
   use 'ThePrimeagen/harpoon'
+
+  -- undo tree
+  use 'mbbill/undotree'
+  
+  -- vim fugitive(manipulate git stuff)
+  use 'tpope/vim-fugitive'
 
 end)
