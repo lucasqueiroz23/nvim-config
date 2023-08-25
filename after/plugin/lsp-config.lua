@@ -1,14 +1,12 @@
-require('mason').setup()
-require('mason-lspconfig').setup({
-    ensure_installed = {
-        'lua_ls',
-        'clangd',
-        'dockerls',
-        'tsserver',
-    }
-})
+local lsp = require('lsp-zero')
 
-require('lspconfig').lua_ls.setup {}
-require('lspconfig').clangd.setup {}
-require('lspconfig').dockerls.setup {}
-require('lspconfig').tsserver.setup {}
+lsp.preset('recommended')
+lsp.setup()
+
+lsp.ensure_installed({
+    'clangd',
+    'tsserver',
+    'lua_ls',
+    'dockerls',
+    'pylsp'
+})
