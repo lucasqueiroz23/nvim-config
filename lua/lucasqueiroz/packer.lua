@@ -41,4 +41,10 @@ return require('packer').startup(function(use)
 
   use 'jiangmiao/auto-pairs'
 
+  use {
+      'williamboman/mason.nvim',
+      'williamboman/mason-lspconfig.nvim',
+      'neovim/nvim-lspconfig'
+  }
+
 end)
