@@ -1,3 +1,6 @@
+-- fat cursor
+vim.opt.guicursor = ""
+
 -- numbers and relative numbers
 vim.opt.nu = true
 vim.opt.relativenumber = true
